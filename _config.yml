@@ -1,1 +1,4 @@
 theme: jekyll-theme-cayman
+title: Multi-Cluster Service Meshes
+github:
+  is_project_page: false
