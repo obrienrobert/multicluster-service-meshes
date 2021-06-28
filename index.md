@@ -1,14 +1,10 @@
 ## What is a Service Mesh?
-
 <div style="text-align: justify">A service mesh is a configurable, low‑latency infrastructure layer designed to handle a high volume of network‑based inter-process communication among application infrastructure services using application programming interfaces. Service meshes alleviate common problems faced in distributed micro-services based architectures by securing inter-service communication, improving network resilience, providing automated service discovery, and offering zero-trust security between services.</div>
-
 
 ## What is a Multi-Cluster Service Mesh?
 <div style="text-align: justify">
 A multi-cluster service mesh comprises a single service mesh that spans multiple Kubernetes clusters. The clusters in a multi-cluster setup can be distributed anywhere, such different data-centers, or even different cloud providers.
-</div>
 
-<div style="text-align: justify">
 Multi-cluster deployments offer many advantages: high availability, as services can be deployed across different regions and zones. Increased security, with services distributed and isolated across multiple clusters. Extensive fault isolation and fail over routing, with the ability to configure how and where network traffic gets routed.
 </div>
 
@@ -18,7 +14,21 @@ The number of service mesh solutions maybe relatively small, but they're popular
 </div>
 
 ## Multi-Cluster Architectures
-<div></div>
+### Istio
+<div style="text-align: justify">Istio offers multiple multi-cluster deployment models and configurations. Istio categorises clusters as either primary, with the cluster containing a Istiod control plane component, and remote, with the cluster being managed by a control plane on a primary cluster. The deployment models are also split into two distinct topologies: network topologies (NT) and control plane topologies (CT), which are displayed below.</div>
+
+  <div id="banner">
+    <div class="inline-block">
+        <img src="images/istio_multi_primary.png" alt="multi-primary" width="500" height="500"/>
+    </div>
+    <div class="inline-block">
+        <img src="images/istio_multi_primary.png" alt="multi-primary" width="500" height="500"/>
+    </div>
+</div>
+
+
+### Consul Connect
+### Linkerd
 
 ## Multi-Cluster Feature Comparison
 
