@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
 title: Multi-Cluster Service Meshes
+description: [Comparing Kubernetes Multi-cluster Service Meshes]
 github:
   is_project_page: false

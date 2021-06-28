@@ -1,6 +1,25 @@
+## What is a Service Mesh?
+
+<div style="text-align: justify">A service mesh is a configurable, low‑latency infrastructure layer designed to handle a high volume of network‑based inter-process communication among application infrastructure services using application programming interfaces. Service meshes alleviate common problems faced in distributed micro-services based architectures by securing inter-service communication, improving network resilience, providing automated service discovery, and offering zero-trust security between services.</div>
+
+
 ## What is a Multi-Cluster Service Mesh?
+<div style="text-align: justify">
+A multi-cluster service mesh comprises a single service mesh that spans multiple Kubernetes clusters. The clusters in a multi-cluster setup can be distributed anywhere, such different data-centers, or even different cloud providers.
+</div>
+
+<div style="text-align: justify">
+Multi-cluster deployments offer many advantages: high availability, as services can be deployed across different regions and zones. Increased security, with services distributed and isolated across multiple clusters. Extensive fault isolation and fail over routing, with the ability to configure how and where network traffic gets routed.
+</div>
+
 ## Popular Service Mesh Solutions
+<div>
+The number of service mesh solutions 
+</div>
+
 ## Multi-Cluster Architectures
+<div></div>
+
 ## Multi-Cluster Feature Comparison
 
 <table>
