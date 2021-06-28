@@ -14,7 +14,7 @@ Multi-cluster deployments offer many advantages: high availability, as services 
 
 ## Popular Service Mesh Solutions
 <div>
-The number of service mesh solutions 
+The number of service mesh solutions maybe relatively small, but they're popularity is growing. Three of most popular service meshes are <a href="https://istio.io/latest">Istio</a>, <a href="https://www.consul.io/docs/connect">Hashicorps Consul Connect</a>, and <a href="https://linkerd.io/">Linkerd</a>, which are the solutions compared on this site. Other popular solutions include <a href="https://kuma.io">Kuma</a>, and <a href="https://traefik.io/traefik-mesh">Traefik Mesh</a>.
 </div>
 
 ## Multi-Cluster Architectures
