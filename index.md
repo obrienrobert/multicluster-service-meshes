@@ -16,21 +16,53 @@ The number of service mesh solutions maybe relatively small, but they're popular
 ## Multi-Cluster Architectures
 ### Istio
 <div style="text-align: justify">Istio offers multiple multi-cluster deployment models and configurations. Istio categorises clusters as either primary, with the cluster containing a Istiod control plane component, and remote, with the cluster being managed by a control plane on a primary cluster. The deployment models are also split into two distinct topologies: network topologies (NT) and control plane topologies (CT), which are displayed below.</div>
-
-  <div id="banner">
+<br>
+<div id="banner">
     <div class="inline-block">
-        <img src="images/istio_multi_primary.png" alt="multi-primary" width="500" height="500"/>
+       <figure>
+  <img src="images/istio_multi_primary.png" alt="multi-primary" width="400" height="350"/>
+  <figcaption>Multi-Primary (CT)</figcaption>
+</figure>
     </div>
     <div class="inline-block">
-        <img src="images/istio_multi_primary.png" alt="multi-primary" width="500" height="500"/>
+<figure>
+        <img src="images/istio_primary_remote.png" alt="primary-remote" width="400" height="350"/>
+<figcaption>Primary-Remote (CT)</figcaption>
+</figure>
     </div>
 </div>
 
+<div id="banner">
+    <div class="inline-block">
+<figure>
+        <img src="images/istio_network_multi_primary.png" alt="network multi-primary" width="400" height="350"/>
+  <figcaption>Network Multi-Primary (NT)</figcaption>
+</figure>
+    </div>
+    <div class="inline-block">
+<figure>
+        <img src="images/istio_network_multi_primary.png" alt="network primary-remote" width="400" height="350"/>
+  <figcaption>Network Primary-Remote (NT)</figcaption>
+</figure>
+    </div>
+</div>
 
 ### Consul Connect
+<div style="text-align: justify">The act of joining two or more Kubernetes clusters together using Consul is termed multi-cluster federation, with each cluster seen as independent data centres. Consul federation provides WAN federation using mesh gateways. One cluster in the multi-cluster setup must be designated as a primary data centre, with all other clusters deemed secondary data centres. Mesh gateways enable routing of Connect traffic between different Consul data centres.
+</div>
+<br>
+<img src="images/consul_mesh_gateway.png" alt="consul architecture" width="500" height="500" />
+
 ### Linkerd
+<div style="text-align: justify">
+Linkerds multi-cluster configuration uses a method called Service Mirroring, a technique developed in-house by Linkerd. Service mirroring replicates services from a remote cluster to a source cluster, giving each cluster a copy of all the remote clusters services. Service Mirroring allows services from a remote cluster to become a Kubernetes service on the host cluster, which pods on the host cluster can forward network traffic.
+</div>
+<br>
+<img src="images/linkerd_service_mirroring.png" alt="linkerd architecture" width="600" height="350" />
 
 ## Multi-Cluster Feature Comparison
+<div style="text-align: justify">
+<br></div>
 
 <table>
 	<tr>
