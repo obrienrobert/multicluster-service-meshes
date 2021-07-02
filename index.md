@@ -51,14 +51,19 @@ The number of service mesh solutions maybe relatively small, but they're popular
 <div style="text-align: justify">The act of joining two or more Kubernetes clusters together using Consul is termed multi-cluster federation, with each cluster seen as independent data centres. Consul federation provides WAN federation using mesh gateways. One cluster in the multi-cluster setup must be designated as a primary data centre, with all other clusters deemed secondary data centres. Mesh gateways enable routing of Connect traffic between different Consul data centres.
 </div>
 <br>
+<p style="text-align:center;">
 <img src="images/consul_mesh_gateway.png" alt="consul architecture" width="500" height="500" />
+</p>
 
 ### Linkerd
 <div style="text-align: justify">
 Linkerds multi-cluster configuration uses a method called Service Mirroring, a technique developed in-house by Linkerd. Service mirroring replicates services from a remote cluster to a source cluster, giving each cluster a copy of all the remote clusters services. Service Mirroring allows services from a remote cluster to become a Kubernetes service on the host cluster, which pods on the host cluster can forward network traffic.
 </div>
 <br>
-<img src="images/linkerd_service_mirroring.png" alt="linkerd architecture" width="600" height="350" />
+
+<p style="text-align:center;">
+<img src="images/linkerd_service_mirroring.png" class="centerImage" alt="linkerd architecture" width="600" height="350" />
+</p>
 
 ## Multi-Cluster Feature Comparison
 <div style="text-align: justify">
